@@ -28,5 +28,5 @@ export default{
 
 <style lang="scss">
 @use './styles/general' as *;
-@use './styles/partials/variables' as *; //Anche senza .scss
+@use './styles/partials/variables' as *; 
 </style>
