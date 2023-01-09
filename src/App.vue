@@ -26,6 +26,7 @@ export default{
   </footer>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@use './styles/general' as *;
+@use './styles/partials/variables' as *; //Anche senza .scss
 </style>
