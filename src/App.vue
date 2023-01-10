@@ -2,9 +2,9 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
-
-export default{
-  components:{
+export default {
+  name: 'App',
+  components: {
     AppHeader,
     AppMain,
     AppFooter,
@@ -12,21 +12,34 @@ export default{
 }
 </script>
 
+
+
 <template>
-  <header>
-    <AppHeader />
-  </header>
-
-  <main>
-    <app-main />
-  </main>
-
-  <footer>
-    <AppFooter />
-  </footer>
+  <div id="app">
+    <AppHeader/>
+    <AppMain/>
+    <AppFooter/>
+  </div>
 </template>
 
+
+
 <style lang="scss">
-@use './styles/general' as *;
-@use './styles/partials/variables' as *; 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+.color-grey{
+  text-decoration: none;
+  color: lightgray;
+}
+
+.color-list{
+  text-decoration: none;
+  color: black;
+}
 </style>
