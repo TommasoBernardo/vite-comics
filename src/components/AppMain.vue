@@ -1,8 +1,10 @@
 
 <script>
+import ListComponent from './ListComponent.vue'
 export default {
     name: 'AppMain',
     components:{
+        ListComponent
             },
             data(){
             return{
@@ -87,6 +89,8 @@ export default {
 </script>
 
 <template>
+<ListComponent v-for="item in comicsList" :path="item.thumb" :price="item.price"
+:series="item.series" :type="item.type" />
     <main>
         <section id="cards">
             <div>
