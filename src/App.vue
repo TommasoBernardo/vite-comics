@@ -15,7 +15,7 @@ export default {
 
 
 <template>
-  <div id="app">
+  <div>
     <AppHeader/>
     <AppMain/>
     <AppFooter/>
