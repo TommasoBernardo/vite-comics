@@ -89,11 +89,21 @@ export default {
 </script>
 
 <template>
-<ListComponent v-for="item in comicsList" :path="item.thumb" :price="item.price"
-:series="item.series" :type="item.type" />
     <main>
-        <section id="cards">
+        <section id="card">
             <div>
+                <div class="jumbotron">
+        </div>
+ <section class="list-component">
+            <div class="wrapper">
+                <h4 class="title"> CURRENT SERIES </h4>
+                <div class="cards">
+                    <ListComponent v-for="item in comicsList" :path="item.thumb" :price="item.price"
+                        :series="item.series" :type="item.type" />
+                </div>
+                <a href="#"> LOAD MORE </a>
+            </div>
+        </section>
             </div>
         </section>
         <section id="images">
@@ -131,8 +141,8 @@ export default {
     margin: 0 auto;
     width: 80%;
 }
-#cards{
-    background-color: black;
+#card{
+    background-color: #1c1c1c;
     color: white;
     padding: 40px 0;
 }
@@ -161,4 +171,42 @@ export default {
         align-content: center;
     }
 }
+
+.jumbotron {
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.list-component {
+    position: relative;
+    padding-top: 4rem;
+    h4.title {
+        color: white;
+        background-color: #0282f9;
+        width: fit-content;
+        font-size: 2rem;
+        padding: .4rem .8rem;
+        position: absolute;
+        top: -20px;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    a {
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        color: white;
+        background-color:  #0282f9;
+        margin: 0 auto;
+        padding: .5rem 2.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+
 </style>
