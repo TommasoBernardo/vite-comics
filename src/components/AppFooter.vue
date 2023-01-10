@@ -66,7 +66,6 @@
                 <div class="button">
                     SIGN-UP NOW
                 </div>
-
                 <div>
                     <img src="../assets/img/footer-facebook.png" alt="">
                     <img src="../assets/img/footer-periscope.png" alt="">
