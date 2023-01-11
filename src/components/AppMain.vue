@@ -144,7 +144,7 @@ export default {
 #card{
     background-color: #1c1c1c;
     color: white;
-    
+    padding: 20px 0;
 }
 #images{
     background-color: rgb(49, 126, 235);
